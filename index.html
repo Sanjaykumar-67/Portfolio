@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Kumar S | AI & Full-Stack Developer</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span class="logo-circle">SK</span>
+            </a>
+            
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Hire Me Button -->
+            <a href="#contact" class="btn btn-outline hire-btn">
+                Hire Me <i class="fas fa-arrow-right"></i>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <span class="hero-tag">HELLO, I'M</span>
+                <h1 class="hero-title">SANJAY KUMAR S</h1>
+                <p class="hero-subtitle">
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </p>
+                <p class="hero-description">
+                    Passionate about creating innovative solutions with artificial intelligence and modern web technologies
+                </p>
+                
+                <!-- Hero Buttons -->
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Hire Me
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-file-alt"></i> View Projects
+                    </a>
+                    <a href="resume.html" class="btn btn-secondary">
+                        <i class="fas fa-file-pdf"></i> View Resume
+                    </a>
+                </div>
+                
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sanjaykumar--s/" target="_blank" class="social-icon" id="hero-linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Sanjaykumar-67" target="_blank" class="social-icon" id="hero-github" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!-- ADD TWITTER LINK HERE -->
+                    <a href="#" class="social-icon" id="hero-twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Content - Profile Image -->
+            <div class="hero-visual">
+                <div class="profile-wrapper">
+                    <div class="profile-glow"></div>
+                    <div class="profile-circle">
+                        <!-- ADD YOUR PROFILE PHOTO HERE - replace src with your image path -->
+                        <img src="profile.jpg" alt="Sanjay Kumar S" id="profile-photo" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="hero-bg-gradient"></div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left - About Text -->
+                <div class="about-content fade-in">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-text">
+                        I'm a passionate AI & Full-Stack Developer with a strong foundation in modern technologies and a drive to create innovative solutions that make a difference. As a B.Tech IT student with hands-on experience in data science and full-stack development, I combine theoretical knowledge with practical skills to build robust applications and intelligent systems.
+                    </p>
+                </div>
+                
+                <!-- Right - Education Card -->
+                <div class="education-card glass-card fade-in">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="education-degree">B.Tech in Information Technology</h3>
+                    <p class="education-college">Jeppiaar Engineering College</p>
+                    <p class="education-year">Expected Graduation: 2027</p>
+                </div>
+            </div>
+            
+            <!-- Experience Section -->
+            <div class="experience-section fade-in">
+                <h3 class="experience-heading">
+                    <i class="fas fa-briefcase"></i> Experience
+                </h3>
+                <div class="experience-card glass-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h4 class="experience-title">Data Science Intern</h4>
+                            <p class="experience-company">TECHENCLAVE | Virtual</p>
+                        </div>
+                        <span class="experience-date">June 2025 – July 2025</span>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Collected, cleaned, and analyzed data to extract meaningful insights.</li>
+                        <li>Built and tested basic machine learning models using Python.</li>
+                        <li>Created clear visualizations and reports to support team projects.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Innovative solutions and applications I've built</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 - Rule Based Chatbot -->
+                <div class="project-card glass-card fade-in">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="project-title">Rule Based Chatbot</h3>
+                    <p class="project-description">
+                        Developed a Python Tkinter chatbot with rule-based replies and SQLite storage. Features a chat history sidebar and CSV export for analysis.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Tkinter</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                    <!-- ADD GITHUB LINK HERE -->
+                    <a href="#" class="btn btn-project">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Project 2 - POS Analytics -->
+                <div class="project-card glass-card fade-in">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="project-title">Point-of-Sale (POS) Analytics</h3>
+                    <p class="project-description">
+                        Interactive analytics dashboard for point-of-sale data with comprehensive visualizations, trend analysis, and business insights.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">Tkinter</span>
+                    </div>
+                    <!-- ADD GITHUB LINK HERE -->
+                    <a href="#" class="btn btn-project">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Project 3 - Tic Tac Toe AI -->
+                <div class="project-card glass-card fade-in">
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="project-title">Tic Tac Toe AI</h3>
+                    <p class="project-description">
+                        A smart Tic Tac Toe game where a user competes against an unbeatable AI using the Minimax algorithm. Features clean OOP architecture.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Minimax Algorithm</span>
+                        <span class="tag">OOP</span>
+                        <span class="tag">CLI</span>
+                    </div>
+                    <!-- ADD GITHUB LINK HERE -->
+                    <a href="#" class="btn btn-project">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Project 4 - VisionCaption-AI -->
+                <div class="project-card glass-card fade-in">
+                    <div class="project-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="project-title">VisionCaption-AI</h3>
+                    <p class="project-description">
+                        A Python desktop application using BLIP vision-language models to automatically generate human-like captions for images, with a Tkinter GUI.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Pillow</span>
+                        <span class="tag">Tkinter</span>
+                    </div>
+                    <!-- ADD GITHUB LINK HERE -->
+                    <a href="#" class="btn btn-project">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Technologies & Skills</h2>
+                <p class="section-subtitle">The tools and technologies I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Languages Card -->
+                <div class="skill-card glass-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-category">Languages</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">
+                            <i class="fab fa-python"></i> Python
+                        </span>
+                        <span class="skill-badge">
+                            <i class="fab fa-java"></i> Java
+                        </span>
+                        <span class="skill-badge">
+                            <i class="fas fa-code"></i> C/C++
+                        </span>
+                        <span class="skill-badge">
+                            <i class="fas fa-database"></i> SQL
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Technologies & Tools Card -->
+                <div class="skill-card glass-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-category">Technologies & Tools</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">
+                            <i class="fas fa-leaf"></i> MongoDB
+                        </span>
+                        <span class="skill-badge">
+                            <i class="fas fa-database"></i> MySQL
+                        </span>
+                        <span class="skill-badge">
+                            <i class="fab fa-git-alt"></i> Git/GitHub
+                        </span>
+                        <span class="skill-badge">
+                            <i class="fas fa-code"></i> VS Code
+                        </span>
+                        <span class="skill-badge">
+                            <i class="fas fa-palette"></i> Canva
+                        </span>
+                        <span class="skill-badge">
+                            <i class="fab fa-linux"></i> Linux
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills Card -->
+                <div class="skill-card glass-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="skill-category">Soft Skills</h3>
+                    <div class="skill-badges soft-skills">
+                        <span class="skill-badge pill">Team Collaboration</span>
+                        <span class="skill-badge pill">Problem Solving</span>
+                        <span class="skill-badge pill">Time Management</span>
+                        <span class="skill-badge pill">Communication</span>
+                        <span class="skill-badge pill">Poster Making</span>
+                        <span class="skill-badge pill">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CERTIFICATES SECTION ==================== -->
+    <section class="section certificates" id="certificates">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <p class="section-subtitle">Recognition of my learning journey and accomplishments</p>
+            </div>
+            
+            <div class="certificates-grid">
+                <!-- Certificate 1 - Edit title and details below -->
+                <div class="certificate-card glass-card fade-in" id="cert-1">
+                    <div class="certificate-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <!-- EDIT CERTIFICATE NAME HERE -->
+                    <h3 class="certificate-title">Certificate Name</h3>
+                    <!-- EDIT ISSUING ORGANIZATION HERE -->
+                    <p class="certificate-issuer">Issuing Organization</p>
+                    <!-- EDIT DATE HERE -->
+                    <p class="certificate-date">Date</p>
+                    <!-- ADD CERTIFICATE LINK HERE -->
+                    <a href="#" class="btn btn-certificate">View Certificate</a>
+                </div>
+                
+                <!-- Certificate 2 - Edit title and details below -->
+                <div class="certificate-card glass-card fade-in" id="cert-2">
+                    <div class="certificate-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <!-- EDIT CERTIFICATE NAME HERE -->
+                    <h3 class="certificate-title">Certificate Name</h3>
+                    <!-- EDIT ISSUING ORGANIZATION HERE -->
+                    <p class="certificate-issuer">Issuing Organization</p>
+                    <!-- EDIT DATE HERE -->
+                    <p class="certificate-date">Date</p>
+                    <!-- ADD CERTIFICATE LINK HERE -->
+                    <a href="#" class="btn btn-certificate">View Certificate</a>
+                </div>
+                
+                <!-- Certificate 3 - Edit title and details below -->
+                <div class="certificate-card glass-card fade-in" id="cert-3">
+                    <div class="certificate-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <!-- EDIT CERTIFICATE NAME HERE -->
+                    <h3 class="certificate-title">Certificate Name</h3>
+                    <!-- EDIT ISSUING ORGANIZATION HERE -->
+                    <p class="certificate-issuer">Issuing Organization</p>
+                    <!-- EDIT DATE HERE -->
+                    <p class="certificate-date">Date</p>
+                    <!-- ADD CERTIFICATE LINK HERE -->
+                    <a href="#" class="btn btn-certificate">View Certificate</a>
+                </div>
+                
+                <!-- Certificate 4 - Edit title and details below -->
+                <div class="certificate-card glass-card fade-in" id="cert-4">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <!-- EDIT CERTIFICATE NAME HERE -->
+                    <h3 class="certificate-title">Certificate Name</h3>
+                    <!-- EDIT ISSUING ORGANIZATION HERE -->
+                    <p class="certificate-issuer">Issuing Organization</p>
+                    <!-- EDIT DATE HERE -->
+                    <p class="certificate-date">Date</p>
+                    <!-- ADD CERTIFICATE LINK HERE -->
+                    <a href="#" class="btn btn-certificate">View Certificate</a>
+                </div>
+                
+                <!-- Certificate 5 - Edit title and details below -->
+                <div class="certificate-card glass-card fade-in" id="cert-5">
+                    <div class="certificate-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!-- EDIT CERTIFICATE NAME HERE -->
+                    <h3 class="certificate-title">Certificate Name</h3>
+                    <!-- EDIT ISSUING ORGANIZATION HERE -->
+                    <p class="certificate-issuer">Issuing Organization</p>
+                    <!-- EDIT DATE HERE -->
+                    <p class="certificate-date">Date</p>
+                    <!-- ADD CERTIFICATE LINK HERE -->
+                    <a href="#" class="btn btn-certificate">View Certificate</a>
+                </div>
+                
+                <!-- Certificate 6 - Edit title and details below -->
+                <div class="certificate-card glass-card fade-in" id="cert-6">
+                    <div class="certificate-icon">
+                        <i class="fas fa-ribbon"></i>
+                    </div>
+                    <!-- EDIT CERTIFICATE NAME HERE -->
+                    <h3 class="certificate-title">Certificate Name</h3>
+                    <!-- EDIT ISSUING ORGANIZATION HERE -->
+                    <p class="certificate-issuer">Issuing Organization</p>
+                    <!-- EDIT DATE HERE -->
+                    <p class="certificate-date">Date</p>
+                    <!-- ADD CERTIFICATE LINK HERE -->
+                    <a href="#" class="btn btn-certificate">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello!</p>
+            </div>
+            
+            <div class="contact-layout fade-in">
+                <!-- Contact Form (Left) -->
+                <form class="contact-form glass-card" action="https://formspree.io/f/mreoqqbr" method="POST">
+                    <h3 class="contact-form-title">Send Me a Message</h3>
+                    <p class="contact-form-subtitle">I’ll get back to you as soon as possible.</p>
+
+                    <!-- ADD FORM TOKEN/EXTRA KEYS HERE IF NEEDED -->
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+
+                <!-- Contact Details (Right) -->
+                <aside class="contact-details glass-card" aria-label="Contact links">
+                    <h3 class="contact-details-title">Contact Info</h3>
+
+                    <a href="https://www.linkedin.com/in/sanjaykumar--s/" target="_blank" class="contact-detail-item" id="linkedin-link" aria-label="LinkedIn">
+                        <span class="contact-detail-icon"><i class="fab fa-linkedin-in"></i></span>
+                        <span class="contact-detail-text">
+                            <strong>LinkedIn</strong>
+                            <small>linkedin.com/in/sanjaykumar--s/</small>
+                        </span>
+                    </a>
+
+                    <a href="https://github.com/Sanjaykumar-67" target="_blank" class="contact-detail-item" id="github-link" aria-label="GitHub">
+                        <span class="contact-detail-icon"><i class="fab fa-github"></i></span>
+                        <span class="contact-detail-text">
+                            <strong>GitHub</strong>
+                            <small>github.com/Sanjaykumar-67</small>
+                        </span>
+                    </a>
+
+                    <a href="mailto:sanjaykumar.sms.2005@gmail.com" class="contact-detail-item" id="email-link" aria-label="Email">
+                        <span class="contact-detail-icon"><i class="fas fa-envelope"></i></span>
+                        <span class="contact-detail-text">
+                            <strong>Email</strong>
+                            <small>sanjaykumar.sms.2005@gmail.com</small>
+                        </span>
+                    </a>
+
+                    <a href="tel:+919008244395" class="contact-detail-item" id="phone-link" aria-label="Phone">
+                        <span class="contact-detail-icon"><i class="fas fa-phone"></i></span>
+                        <span class="contact-detail-text">
+                            <strong>Phone</strong>
+                            <small>+91 9008244395</small>
+                        </span>
+                    </a>
+                </aside>
+            </div>
+            
+            <p class="contact-note fade-in">
+                <i class="fas fa-info-circle"></i> 
+                I'm always open to discussing new projects and opportunities!
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Sanjay Kumar S.</p>
+            
+            <!-- Back to Top Button -->
+            <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Sanjay Kumar S</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --text-primary: #ffffff;
+            --text-secondary: #8b949e;
+            --accent-primary: #7c3aed;
+            --accent-secondary: #8b5cf6;
+            --accent-glow: rgba(124, 58, 237, 0.4);
+            --border-color: rgba(139, 92, 246, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary));
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        .resume-page {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px 20px 28px;
+        }
+
+        .resume-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding: 14px 16px;
+            background: rgba(22, 27, 34, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+
+        .resume-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .resume-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            transition: all 0.25s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--accent-glow);
+            border-color: var(--accent-secondary);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            border: none;
+        }
+
+        .pdf-frame-wrap {
+            height: calc(100vh - 130px);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: #0b0f14;
+        }
+
+        .pdf-frame,
+        .pdf-object {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        .fallback {
+            margin-top: 12px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .fallback a {
+            color: #c4b5fd;
+        }
+    </style>
+</head>
+<body>
+    <main class="resume-page">
+        <header class="resume-header">
+            <h1 class="resume-title">Sanjay Kumar S — Resume</h1>
+            <div class="resume-actions">
+                <a class="btn" href="index.html"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                <a class="btn btn-primary" href="autoCV__2_%20%281%29%20%281%29.pdf" download="Sanjay-Kumar-S-Resume.pdf">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </header>
+
+        <section class="pdf-frame-wrap">
+            <object class="pdf-object" data="autoCV__2_%20%281%29%20%281%29.pdf#toolbar=1&navpanes=1&scrollbar=1" type="application/pdf">
+                <iframe class="pdf-frame" src="autoCV__2_%20%281%29%20%281%29.pdf#toolbar=1&navpanes=1&scrollbar=1" title="Sanjay Resume"></iframe>
+            </object>
+        </section>
+
+        <p class="fallback">
+            If the PDF doesn't load here, <a href="autoCV__2_%20%281%29%20%281%29.pdf" target="_blank" rel="noopener">click to open it directly</a>.
+        </p>
+    </main>
+</body>
+</html>
