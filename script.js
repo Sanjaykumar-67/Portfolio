@@ -255,6 +255,49 @@ certificateCards.forEach(card => {
     certObserver.observe(card);
 });
 
+// ==================== CERTIFICATE LIGHTBOX ====================
+const certificateButtons = document.querySelectorAll('.cert-view-btn');
+const certificateLightbox = document.getElementById('certificate-lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const lightboxClose = document.getElementById('lightbox-close');
+
+function openCertificateLightbox(imagePath) {
+    if (!certificateLightbox || !lightboxImage) return;
+    lightboxImage.src = encodeURI(imagePath);
+    certificateLightbox.classList.add('active');
+    certificateLightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertificateLightbox() {
+    if (!certificateLightbox || !lightboxImage) return;
+    certificateLightbox.classList.remove('active');
+    certificateLightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = '';
+    document.body.style.overflow = '';
+}
+
+certificateButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const imagePath = button.getAttribute('data-img');
+        if (imagePath) {
+            openCertificateLightbox(imagePath);
+        }
+    });
+});
+
+if (lightboxClose) {
+    lightboxClose.addEventListener('click', closeCertificateLightbox);
+}
+
+if (certificateLightbox) {
+    certificateLightbox.addEventListener('click', (event) => {
+        if (event.target === certificateLightbox) {
+            closeCertificateLightbox();
+        }
+    });
+}
+
 // ==================== CONTACT ICONS HOVER RIPPLE EFFECT ====================
 const contactIcons = document.querySelectorAll('.contact-icon');
 
@@ -311,6 +354,11 @@ document.addEventListener('keydown', (e) => {
         const icon = mobileMenuToggle.querySelector('i');
         icon.classList.remove('fa-times');
         icon.classList.add('fa-bars');
+    }
+
+    // Press 'Escape' to close certificate lightbox
+    if (e.key === 'Escape' && certificateLightbox && certificateLightbox.classList.contains('active')) {
+        closeCertificateLightbox();
     }
     
     // Press 'Home' to scroll to top
