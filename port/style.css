@@ -197,6 +197,8 @@ img {
     padding: 10px 20px;
     font-size: 0.85rem;
     margin-top: 15px;
+    width: 100%;
+    justify-content: center;
 }
 
 .btn-certificate:hover {
@@ -343,6 +345,7 @@ img {
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 15px;
+    white-space: nowrap;
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -743,6 +746,8 @@ img {
 .certificate-card {
     padding: 30px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .certificate-icon {
@@ -774,6 +779,126 @@ img {
 .certificate-date {
     font-size: 0.85rem;
     color: var(--text-muted);
+}
+
+.certificate-card .btn-certificate {
+    margin-top: auto;
+}
+
+/* Certificate Lightbox Modal */
+.certificate-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-medium), visibility var(--transition-medium);
+}
+
+.certificate-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* ==================== SERVICES SECTION ==================== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    border-top: 3px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px var(--accent-glow);
+    border-top-color: var(--accent-secondary);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    color: var(--text-primary);
+    font-size: 1.3rem;
+}
+
+.service-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.service-description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.service-features {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.service-features li {
+    position: relative;
+    padding-left: 18px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.service-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-secondary);
 }
 
 /* ==================== CONTACT SECTION ==================== */
@@ -1044,6 +1169,10 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .contact-layout {
         grid-template-columns: 1fr;
     }
@@ -1096,6 +1225,10 @@ img {
     }
     
     .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
         grid-template-columns: 1fr;
     }
     
