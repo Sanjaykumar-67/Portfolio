@@ -191,6 +191,20 @@ img {
     transform: translateX(5px);
 }
 
+.btn-project-live {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: var(--text-primary);
+    padding: 10px 14px;
+    font-weight: 500;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-project-live:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px var(--accent-glow);
+}
+
 .btn-certificate {
     background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
     color: var(--text-primary);
@@ -657,6 +671,16 @@ img {
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 15px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-buttons .btn {
+    flex: 1;
 }
 
 .tag {
@@ -1229,6 +1253,10 @@ img {
     }
 
     .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
         grid-template-columns: 1fr;
     }
     
