@@ -12,14 +12,15 @@
 
     <style>
         :root {
-            --bg-primary: #0d1117;
-            --bg-secondary: #161b22;
-            --text-primary: #ffffff;
-            --text-secondary: #8b949e;
-            --accent-primary: #7c3aed;
-            --accent-secondary: #8b5cf6;
-            --accent-glow: rgba(124, 58, 237, 0.4);
-            --border-color: rgba(139, 92, 246, 0.25);
+            --bg-primary: #F8FAFC;
+            --bg-secondary: #F0FDF4;
+            --bg-card: #FFFFFF;
+            --text-primary: #111827;
+            --text-secondary: #4B5563;
+            --accent-primary: #22C55E;
+            --accent-secondary: #16A34A;
+            --accent-glow: rgba(34, 197, 94, 0.10);
+            --border-color: #E5E7EB;
         }
 
         * {
@@ -30,8 +31,8 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary));
-            color: var(--text-primary);
+            background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+            color: var(--text-secondary);
             min-height: 100vh;
         }
 
@@ -50,8 +51,7 @@
             gap: 12px;
             margin-bottom: 16px;
             padding: 14px 16px;
-            background: rgba(22, 27, 34, 0.7);
-            backdrop-filter: blur(8px);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 12px;
         }
@@ -83,7 +83,7 @@
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px var(--accent-glow);
+            box-shadow: 0 6px 18px var(--accent-glow);
             border-color: var(--accent-secondary);
         }
 
@@ -97,7 +97,7 @@
             border-radius: 14px;
             overflow: hidden;
             border: 1px solid var(--border-color);
-            background: #0b0f14;
+            background: #FFFFFF;
         }
 
         .pdf-frame,
@@ -115,7 +115,7 @@
         }
 
         .fallback a {
-            color: #c4b5fd;
+            color: var(--accent-primary);
         }
     </style>
 </head>

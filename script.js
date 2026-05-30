@@ -342,9 +342,9 @@ window.addEventListener('load', () => {
 });
 
 // ==================== CONSOLE EASTER EGG ====================
-console.log('%c👋 Hey there, curious developer!', 'font-size: 20px; font-weight: bold; color: #8b5cf6;');
-console.log('%c📧 Want to collaborate? Reach out to Sanjay!', 'font-size: 14px; color: #6e7681;');
-console.log('%c🚀 Built with HTML, CSS & JavaScript', 'font-size: 12px; color: #6e7681;');
+console.log('%c👋 Hey there, curious developer!', 'font-size: 20px; font-weight: bold; color: #22C55E;');
+console.log('%c📧 Want to collaborate? Reach out to Sanjay!', 'font-size: 14px; color: #4B5563;');
+console.log('%c🚀 Built with HTML, CSS & JavaScript', 'font-size: 12px; color: #4B5563;');
 
 // ==================== KEYBOARD NAVIGATION ====================
 document.addEventListener('keydown', (e) => {
